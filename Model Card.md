@@ -36,9 +36,11 @@ Hyperparameter optimization is a time-consuming operation. To accelerate it the 
 For all used classifiers train and test score are summarized in the tables below.
 
 Scores on train set:
+
 ![plot](./train_scores.png)
 
 Scores on test set:
+
 ![plot](./test_scores.png)
 
 ### Ethical consideration
