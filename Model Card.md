@@ -7,15 +7,15 @@
 - Hyperparameter tuning using Grid search and Bayesian optimization.
 
 ### Intended use
-- Red wine classification into 3 categories ìpoorî, ìgoodî, ìexcellentî.
+- Red wine classification into 3 categories ‚Äúpoor‚Äù, ‚Äúgood‚Äù, ‚Äúexcellent‚Äù.
 - Demonstration of Bayesian optimization used for hyperparameter tuning and comparison with Grid search approach.
 - Using oversampling to rebalance training data.
 - Educational purpose.
 
 ### Factors
 - Dataset factors:
-The dataset consists of 12 columns. 11 are divert chemical wine features acquired by laboratory analysis. The 12th columns contains the output variable with the quality score from in the range 0 ñ 10. This quality score values were acquired by tasting wines by specialists. Nature of this data is psycho-sensorial and it is expected to be biased. To mitigate the bias a new output variable was created containing only 3 category ìpoorî, ìgoodî, ìexcellentî.
-As expected, the dataset is imbalanced in term of output variable. Most of items falls in the category ìgoodî, but the frequencies of ìpoorî and ìexcellentî are very low. To rebalance the training dataset, oversampling technique is used.
+The dataset consists of 12 columns. 11 are divert chemical wine features acquired by laboratory analysis. The 12th columns contains the output variable with the quality score from in the range 0 ‚Äì 10. This quality score values were acquired by tasting wines by specialists. Nature of this data is psycho-sensorial and it is expected to be biased. To mitigate the bias a new output variable was created containing only 3 category ‚Äúpoor‚Äù, ‚Äúgood‚Äù, ‚Äúexcellent‚Äù.
+As expected, the dataset is imbalanced in term of output variable. Most of items falls in the category ‚Äúgood‚Äù, but the frequencies of ‚Äúpoor‚Äù and ‚Äúexcellent‚Äù are very low. To rebalance the training dataset, oversampling technique is used.
 
 - Computational factors:
 Hyperparameter optimization is a time-consuming operation. To accelerate it the model is set to use all the available CPU cores on the machine. No special settings are done for GPU computation.
@@ -33,11 +33,13 @@ Hyperparameter optimization is a time-consuming operation. To accelerate it the 
 - Test data ratio 30%.
 
 ### Quantitative analysis
-For all used classifiers the training anf
-Scores on training set:
+For all used classifiers train and test score are summarized in the tables below.
 
+Scores on train set:
+![plot](./train_scores.png)
 
-Scores in
+Scores on test set:
+![plot](./test_scores.png)
 
 ### Ethical consideration
 - Not applicable.
